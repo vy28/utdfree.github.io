@@ -57,20 +57,24 @@
         </div>
       </nav>
 
+
       <div class="contact-form-wrapper d-flex justify-content-center border rounded-4 px-4 py-5 bg-white" style="margin-left: 7%; margin-right: 7%;">
-        <form action="mailto:tharstudios23@gmail.com" class="contact-form">
-          <h1 class="title" style="letter-spacing: -2px;"><b>Know a discount not on here?</b> Let us know!</h1>
-          </p>
-          
-          <div>
-            <input type="email" class="form-control rounded border-white mb-3 form-input bg-light" placeholder="Email" required>
-          </div>
-          <div>
-            <textarea id="message" class="form-control rounded border-white mb-3 form-text-area bg-light" rows="5" cols="90" placeholder="Message" required></textarea>
-          </div>
-          <div class="col-auto">
-              <button type="submit" class="btn text-white" style="background-color: #F87E2D;">Submit</button>
-            </div>
+        <form action="https://formspree.io/f/mqkogaaz" method="POST">
+        <h1 style="letter-spacing: -2px;"><b>Know a discount not on here?</b> Let us know!</h1>
+        <label>
+          <input type="email" name="Email" class="form-control rounded border-white mb-3 form-input bg-light" placeholder="Email" required>
+        </label>
+        <br>
+        <label>
+          <textarea name="Message"       class="form-control rounded border-white mb-3 form-text-area bg-light" rows="5" cols="90" placeholder="Message" required></textarea>
+        </label>
+        <br>
+        <label>
+          <textarea name="Link to Deal"       class="form-control rounded border-white mb-3 form-text-area bg-light" rows="5" cols="90" placeholder="Link to Deal (optional)"></textarea>
+        </label>
+        <br>
+  <!-- your other form fields go here -->
+        <button type="submit" class="btn text-white" style="background-color: #F87E2D;">Submit</button>
         </form>
       </div>
     </div>
