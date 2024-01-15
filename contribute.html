@@ -1,101 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<html>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=spline-sans@300,400,600,700,500&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=plus-jakarta-sans@800,400,500,600,700,300,200&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@preline/preline@1.0.0/dist/hs-ui.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/c7e676a0a3.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        font-family: 'Spline Sans', sans-serif;
+      }
+    </style>
+  </head>
+<body class="bg-slate-900">
+<!-- Hero -->
+<div class="bg-slate-900">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand" aria-label="Twelfth navbar example" style="background-color: #F87E2D;">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
   
-          <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
-            <ul class="navbar-nav" style="font-size: 14px; color: white;">
-              <li class="nav-item px-4">
-                This website is still in alpha stages and is not fully functional yet. (Version 1.1.4)
-              </li>
-            </ul>
+
+  <div class="bg-gradient-to-b from-orange-800/[.2] via-transparent">
+
+    <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm px-4 sm:px-0">
+      <nav class="mt-8 relative max-w-5xl w-full bg-white/[0.05] border border-white/[0.1] shadow-lg rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-white/[0.05] dark:border-white/[0.1]" aria-label="Global">
+        <div class="flex items-center justify-between">
+          <a class="flex-none text-sm font-semibold dark:text-white text-white" href="index.html" aria-label="Brand"><img src = "Assets/Logos/utdfree_logo_light.svg" alt="UtdFree" class=" h-7"/></a>
+          <div class="md:hidden">
+            <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-full border-gray-500 font-medium bg-white/[0.05] text-gray-300 shadow-sm align-middle hover:bg-white/[0.07] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-white/[0.05] dark:bg-white/[0.07] dark:border-gray-500 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+              <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </button>
           </div>
         </div>
-      </nav>
-
-    <nav class="navbar navbar-expand-lg bg-body-white rounded" aria-label="Twelfth navbar example" style="margin: 3%; margin-top: 3%;">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
-            <ul class="navbar-nav" style="font-size: 18px;">
-              <li class="nav-item px-4">
-                <a class="nav-link" aria-current="page" href="index.html" :;">Utd Perks</a>
-              </li>
-              <li class="nav-item px-4">
-                <a class="nav-link " href="freestuff.html" >Find Free Stuff</a>
-              </li>
-              <li class="nav-item px-4">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item px-4">
-                <a class="nav-link active" style="border-bottom: 3px solid #F87E2D; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px;">Contribute</a>
-              </li>
-            </ul>
-          </div>
+        <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
+          <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7">
+            <a class="font-medium text-gray-500 hover:text-gray-400 md:py-6 dark:text-gray-400 dark:hover:text-gray-500" href="find_services.html" aria-current="page">Find</a>
+            <a class="font-medium text-gray-500 hover:text-gray-400 md:py-6 dark:text-gray-400 dark:hover:text-gray-500" href="about.html">About</a>
+            <a class="font-medium text-orange-500 hover:text-gray-400 md:py-6 dark:text-orange-500 dark:hover:text-gray-500" href="#">Contribute</a>
+          
+    
         </div>
       </nav>
+    </header>
+
+    
+      <!-- Title -->
+      <div class="max-w-3xl text-center mx-auto mt-20">
+        <h1 class="block font-semibold text-gray-200 text-4xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tight">
+          <!-- Find <span class="font-serif italic text-orange-500">free</span> UTD Resources & Discounts --> <!-- Find free UTD Resources & Discounts --> Know about a discount not on here? Tell us about it!
+        </h1>
+      </div>
+      <!-- End Title -->
 
 
-      <div class="contact-form-wrapper d-flex justify-content-center border rounded-4 px-4 py-5 bg-white" style="margin-left: 7%; margin-right: 7%;">
+      <div class="max-w-[65rem] mx-auto bg-white p-8 mt-16 border border-white/[0.1] bg-white/[0.05] rounded-[25px]">
+
         <form action="https://formspree.io/f/mqkogaaz" method="POST">
-        <h1 style="letter-spacing: -2px;"><b>Know a discount not on here?</b> Let us know!</h1>
-        <label>
-          <input type="email" name="Email" class="form-control rounded border-white mb-3 form-input bg-light" placeholder="Email" required>
-        </label>
-        <br>
-        <label>
-          <textarea name="Message"       class="form-control rounded border-white mb-3 form-text-area bg-light" rows="5" cols="90" placeholder="Message" required></textarea>
-        </label>
-        <br>
-        <label>
-          <textarea name="Link to Deal"       class="form-control rounded border-white mb-3 form-text-area bg-light" rows="5" cols="90" placeholder="Link to Deal (optional)"></textarea>
-        </label>
-        <br>
-  <!-- your other form fields go here -->
-        <button type="submit" class="btn text-white" style="background-color: #F87E2D;">Submit</button>
+          <label class="block w-full">
+            <input type="email" name="Email" class="form-input rounded-lg mt-2 p-3 w-full bg-white/[0.05] border border-white/[0.1]" placeholder="Email" required="">
+          </label>
+      
+          <label class="block mt-5 text-gray-200 w-full">
+            <textarea name="Message" class="form-input rounded-lg mt-2 p-3 w-full bg-white/[0.05] border border-white/[0.1]" rows="5" placeholder="Message" required=""></textarea>
+          </label>
+      
+          <label class="block mt-5 text-gray-200 w-full">
+            <textarea name="Link to Deal" class="form-input rounded-lg mt-2 p-3 w-full bg-white/[0.05] border border-white/[0.1]" rows="5" placeholder="Link to Deal (optional)"></textarea>
+          </label>
+      
+          <!-- your other form fields go here -->
+      
+          <button type="submit" class="py-3 px-6 mt-5 text-md font-medium text-white bg-gradient-to-tl from-orange-600 to-amber-600 rounded-lg focus:outline-none focus:ring-4 focus:ring-orange-600 hover:scale-110 hover:bg-gradient-to-tl hover:from-orange-600 hover:to-amber-600 shadow-lg hover:shadow-orange-800/50 transition ease-in-out">Submit</button>
         </form>
-      </div>
-    </div>
-
-    <div class="container" style="padding: 5%;">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-4 mb-0 text-body-secondary" style="font-size: 12px;">(UTDfree is in no way shape or form affiliated with The University of Texas at Dallas)</p>
       
-          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          </a>
-      
-          <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="freestuff.html" class="nav-link px-2 text-body-secondary">Freestuff</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
-            <li class="nav-item"><a href="privacy.html" class="nav-link px-2 text-body-secondary">Privacy</a></li>
-            <li class="nav-item"><a href="contribute.html" class="nav-link px-2 text-body-secondary">Contribute</a></li>
-
-          </ul>
-        </footer>
       </div>
+      
+      
+      
+      <footer class="mt-auto w-full max-w-[85rem] py-8 px-4 sm:px-6 lg:px-8 mx-auto">
+        <!-- Grid -->
+        <div class="text-center">
+      
+          <div class="mt-3">
+            <p class="text-gray-500">Created, Designed and Developed by<a class="font-semibold text-orange-500 hover:text-orange-400 hov dark:text-orange-500 dark:hover:text-orange-400 " href="http://vyomsethia.com"> Vyom Sethia </a></p>
+            <p class="text-gray-500">© UtdFree 2023</p>
+          </div>
+      
+          <!-- Social Brands -->
+          <div class="mt-1 space-x-2">
+            <a class="inline-flex justify-center items-center w-12 h-12 text-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800 text-gray-500 hover:text-gray-200 hover:bg-gray-800" href="https://www.instagram.com/vyom.sethia/">
+              <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a class="inline-flex justify-center items-center w-12 h-12 text-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800 text-gray-500 hover:text-gray-200 hover:bg-gray-800" href="https://www.linkedin.com/in/vyomsethia">
+              <i class="fa-brands fa-linkedin-in fa-xl"></i>
+            </a>
+            <a class="inline-flex justify-center items-center w-12 h-12 text-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800 text-gray-500 hover:text-gray-200 hover:bg-gray-800" href="mailto:vyomsethia@gmail.com">
+              <i class="fa-regular fa-envelope fa-xl"></i>
+            </a>
+          </div>
+          <!-- End Social Brands -->
+        </div>
+        <!-- End Grid -->
+      </footer>
 </body>
 </html>

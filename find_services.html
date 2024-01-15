@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=spline-sans@300,400,600,700,500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@preline/preline@1.0.0/dist/hs-ui.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/c7e676a0a3.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Spline Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-900">
+<!-- Hero -->
+<div class="bg-slate-900">
+
+  
+
+  <div class="bg-gradient-to-b from-orange-800/[.2] via-transparent">
+
+    <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm px-4 sm:px-0">
+      <nav class="mt-8 relative max-w-5xl w-full bg-white/[0.05] border border-white/[0.1] shadow-lg rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-white/[0.05] dark:border-white/[0.1]" aria-label="Global">
+        <div class="flex items-center justify-between">
+          <a class="flex-none text-sm font-semibold dark:text-white text-white" href="index.html" aria-label="Brand"><img src = "Assets/Logos/utdfree_logo_light.svg" alt="UtdFree" class=" h-7"/></a>
+          <div class="md:hidden">
+            <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-full border-gray-500 font-medium bg-white/[0.05] text-gray-300 shadow-sm align-middle hover:bg-white/[0.07] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-white/[0.05] dark:bg-white/[0.07] dark:border-gray-500 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+              <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
+          <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7">
+            <a class="font-medium text-orange-500 md:py-6 dark:text-orange-500" href="find.html" aria-current="page">Find</a>
+            <a class="font-medium text-gray-500 hover:text-gray-400 md:py-6 dark:text-gray-400 dark:hover:text-gray-500" href="about.html">About</a>
+            <a class="font-medium text-gray-500 hover:text-gray-400 md:py-6 dark:text-gray-400 dark:hover:text-gray-500" href="contribute.html">Contribute</a>
+          
+    
+        </div>
+      </nav>
+    </header>
+
+<!-- <div class="flex justify-center items-center pb-10 mt-20 gap-5">
+
+  <a href="#.html">
+    <button type="button" class="py-3 px-6 inline-flex sm:p-5 justify-center items-center gap-2 rounded-full border font-medium  hover:bg-orange-500 border-gray-700 text-gray-400 hover:text-gray-100 focus:ring-offset-gray-800 hover:border-orange-400 transition-all text-sm dark:hover:bg-orange-500 dark:border-gray-700 dark:text-gray-400 dark:hover:text-gray-100 dark:focus:ring-offset-gray-800 dark:hover:border-orange-400">
+      Food
+    </button>
+  </a>
+
+  <a href="#">
+    <button type="button" class="active py-3 px-6 inline-flex sm:p-5 justify-center items-center gap-2 rounded-full border font-medium bg-orange-500/[0.1] hover:bg-orange-500/[0.2] border-orange-500 text-orange-500 hover:text-orange-500 focus:ring-offset-gray-800 transition-all text-sm dark:bg-orange-500/[0.1] dark:hover:bg-orange-500/[0.2] dark:border-orange-500 dark:text-orange-500 dark:hover:text-orange-500 dark:focus:ring-offset-gray-800">
+      Services
+  </button>
+  </a>
+  
+  <a>
+    <button type="button" class="py-3 px-6 inline-flex sm:p-5 justify-center items-center gap-2 rounded-full border font-medium  hover:bg-orange-500 border-gray-700 text-gray-400 hover:text-gray-100 focus:ring-offset-gray-800 hover:border-orange-400 transition-all text-sm dark:hover:bg-orange-500 dark:border-gray-700 dark:text-gray-400 dark:hover:text-gray-100 dark:focus:ring-offset-gray-800 dark:hover:border-orange-400">
+      Software
+    </button>
+    </a>
+  
+  <a>
+    <button type="button" class="py-3 px-6 inline-flex sm:p-5 justify-center items-center gap-2 rounded-full border font-medium  hover:bg-orange-500 border-gray-700 text-gray-400 hover:text-gray-100 focus:ring-offset-gray-800 hover:border-orange-400 transition-all text-sm dark:hover:bg-orange-500 dark:border-gray-700 dark:text-gray-400 dark:hover:text-gray-100 dark:focus:ring-offset-gray-800 dark:hover:border-orange-400">
+      Subscriptions / Websites
+    </button>
+  </a>
+
+  
+
+    
+  
+  
+</div> -->
+<div class="flex flex-col sm:flex-row flex-wrap justify-center items-center pb-10 mt-20 gap-5 px-6 sm:px-0">
+  <!-- Button 1 -->
+  <a href="#" class="w-full sm:w-auto">
+    <button type="button" class="w-full py-3 px-6 inline-flex justify-center items-center gap-2 rounded-full border font-medium hover:bg-orange-500 border-gray-700 text-gray-400 hover:text-gray-100 focus:ring-offset-gray-800 hover:border-orange-400 transition-all text-sm dark:hover:bg-orange-500 dark:border-gray-700 dark:text-gray-400 dark:hover:text-gray-100 dark:focus:ring-offset-gray-800 dark:hover:border-orange-400">
+      Food<span class="text-xs">(coming soon)</span>
+    </button>
+  </a>
+
+  <!-- Button 2 -->
+  <a href="#" class="w-full sm:w-auto">
+    <button type="button" class="w-full py-3 px-6 inline-flex justify-center items-center gap-2 rounded-full border font-medium bg-orange-500/[0.1] hover:bg-orange-500/[0.2] border-orange-500 text-orange-500 hover:text-orange-500 focus:ring-offset-gray-800 transition-all text-sm dark:bg-orange-500/[0.1] dark:hover:bg-orange-500/[0.2] dark:border-orange-500 dark:text-orange-500 dark:hover:text-orange-500 dark:focus:ring-offset-gray-800">
+      Services
+    </button>
+  </a>
+  
+  <!-- Button 3 -->
+  <a href="find_software.html" class="w-full sm:w-auto">
+    <button type="button" class="w-full py-3 px-6 inline-flex justify-center items-center gap-2 rounded-full border font-medium hover:bg-orange-500 border-gray-700 text-gray-400 hover:text-gray-100 focus:ring-offset-gray-800 hover:border-orange-400 transition-all text-sm dark:hover:bg-orange-500 dark:border-gray-700 dark:text-gray-400 dark:hover:text-gray-100 dark:focus:ring-offset-gray-800 dark:hover:border-orange-400">
+      Software
+    </button>
+  </a>
+  
+  <!-- Button 4 -->
+  <a href="find_subscriptions.html" class="w-full sm:w-auto">
+    <button type="button" class="w-full py-3 px-6 inline-flex justify-center items-center gap-2 rounded-full border font-medium hover:bg-orange-500 border-gray-700 text-gray-400 hover:text-gray-100 focus:ring-offset-gray-800 hover:border-orange-400 transition-all text-sm dark:hover:bg-orange-500 dark:border-gray-700 dark:text-gray-400 dark:hover:text-gray-100 dark:focus:ring-offset-gray-800 dark:hover:border-orange-400">
+      Subscriptions / Websites
+    </button>
+  </a>
+</div>
+
+
+
+<!--
+<div class="flex justify-center items-center gap-5 bg-white/[0.05] dark:bg-white/[0.05] py-2 mx-40" >
+  <button class="py-3 px-6 inline-flex sm:p-3 justify-center items-center gap-2 rounded-full border font-medium text-gray-700 shadow-sm align-middle hover:bg-emerald-600/[0.2] focus:outline-none focus:ring-2 focus:ring-offset-2  bg-emerald-600/[0.2] border-emerald-300 transition-all text-sm dark:bg-emerald-600/[0.2] dark:border-emerald-300">          
+  </button> <p class="text-gray-200 dark:text-gray-200">100% Free </p>
+  <button  class="py-3 px-6 inline-flex sm:p-3 justify-center items-center gap-2 rounded-full border font-medium text-gray-700 shadow-sm align-middle hover:bg-amber-400/[0.2] focus:outline-none focus:ring-2 focus:ring-offset-2  bg-amber-400/[0.2] border-amber-300 transition-all text-sm dark:bg-amber-400/[0.2] dark:border-amber-300">
+              
+  </button> <p class="text-gray-200 dark:text-gray-200">Discounted </p>
+
+  
+</div>
+-->
+    
+    <!-- Card Section -->
+<div class="max-w-[75rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <!-- Grid -->
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-6">
+    
+    <!-- Free Service Card -->
+    <a class="group flex flex-col bg-white/[0.03] border border-white/[0.2] shadow-sm rounded-xl hover:shadow-md hover:bg-emerald-600/[0.2] hover:border-emerald-300/[0.4] transition dark:bg-white/[0.03] dark:border-white/[0.1]" href="https://sg.utdallas.edu/attorney/#:~:text=Schedule%20an%20Appointment,email%20sg%40utdallas.edu.">
+      <div class="p-4 md:p-5">
+        <div class="flex justify-between items-center">
+          <div>
+            <h2 class="group-hover:text-gray-200 font-semibold text-gray-200 dark:group-hover:text-gray-400 dark:text-gray-200 text-xl">
+              Attorney Services
+            </h2>
+            <p class="text-sm  text-gray-500">
+              Attorney services are free of charge, for legal advice and consultation.
+            </p>
+          </div>
+          <div class="pl-3">
+            <button type="button" class="py-3 px-6 inline-flex sm:p-3 justify-center items-center gap-2 rounded-full border font-medium text-gray-700 shadow-sm align-middle hover:bg-emerald-600/[0.2] focus:outline-none focus:ring-2 focus:ring-offset-2  bg-emerald-600/[0.2] border-emerald-300 transition-all text-sm dark:bg-emerald-600/[0.2] dark:border-emerald-300">
+              
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </a>
+    <!-- End Card -->
+
+    <!-- Free Service Card -->
+    <a class="group flex flex-col bg-white/[0.03] border border-white/[0.2] shadow-sm rounded-xl hover:shadow-md hover:bg-emerald-600/[0.2] hover:border-emerald-300/[0.4] transition dark:bg-white/[0.03] dark:border-white/[0.1]" href="https://oue.utdallas.edu/cupboard">
+      <div class="p-4 md:p-5">
+        <div class="flex justify-between items-center">
+          <div>
+            <h2 class="group-hover:text-gray-200 font-semibold text-gray-200 dark:group-hover:text-gray-400 dark:text-gray-200 text-xl">
+              Comet Cupboard
+            </h2>
+            <p class="text-sm  text-gray-500">
+              A free UT Dallas food pantry initiative dedicated to helping students in need.
+            </p>
+          </div>
+          <div class="pl-3">
+            <button type="button" class="py-3 px-6 inline-flex sm:p-3 justify-center items-center gap-2 rounded-full border font-medium text-gray-700 shadow-sm align-middle hover:bg-emerald-600/[0.2] focus:outline-none focus:ring-2 focus:ring-offset-2  bg-emerald-600/[0.2] border-emerald-300 transition-all text-sm dark:bg-emerald-600/[0.2] dark:border-emerald-300">
+              
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </a>
+    <!-- End Card -->
+
+    <!-- Yellow Card -->
+    <a class="group flex flex-col bg-white/[0.03] border border-white/[0.2] shadow-sm rounded-xl hover:shadow-md hover:bg-amber-400/[0.2] hover:border-amber-200/[0.4] transition dark:bg-white/[0.03] dark:border-white/[0.1]" href="https://utdmaker.space">
+      <div class="p-4 md:p-5">
+        <div class="flex justify-between items-center">
+          <div>
+            <h2 class="group-hover:text-gray-200 font-semibold text-gray-200 dark:group-hover:text-gray-400 dark:text-gray-200 text-xl">
+              3D Printing & Laser Etching
+            </h2>
+            <p class="text-sm  text-gray-500">
+              UTD Makerspace offers free 3d Printing, the only cost is material used.
+            </p>
+          </div>
+          <div class="pl-3">
+            <button type="button" class="py-3 px-6 inline-flex sm:p-3 justify-center items-center gap-2 rounded-full border font-medium text-gray-700 shadow-sm align-middle hover:bg-amber-400/[0.2] focus:outline-none focus:ring-2 focus:ring-offset-2  bg-amber-400/[0.2] border-amber-300 transition-all text-sm dark:bg-amber-400/[0.2] dark:border-amber-300">
+              
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </a>
+    <!-- End Card -->
+
+    <!-- Free Service Card -->
+    <a class="group flex flex-col bg-white/[0.03] border border-white/[0.2] shadow-sm rounded-xl hover:shadow-md hover:bg-emerald-600/[0.2] hover:border-emerald-300/[0.4] transition dark:bg-white/[0.03] dark:border-white/[0.1]" href="https://counseling.utdallas.edu">
+      <div class="p-4 md:p-5">
+        <div class="flex justify-between items-center">
+          <div>
+            <h2 class="group-hover:text-gray-200 font-semibold text-gray-200 dark:group-hover:text-gray-400 dark:text-gray-200 text-xl">
+            Student Counseling Center
+            </h2>
+            <p class="text-sm  text-gray-500">
+              Provides student mental health services for free.
+            </p>
+          </div>
+          <div class="pl-3">
+            <button type="button" class="py-3 px-6 inline-flex sm:p-3 justify-center items-center gap-2 rounded-full border font-medium text-gray-700 shadow-sm align-middle hover:bg-emerald-600/[0.2] focus:outline-none focus:ring-2 focus:ring-offset-2  bg-emerald-600/[0.2] border-emerald-300 transition-all text-sm dark:bg-emerald-600/[0.2] dark:border-emerald-300">
+              
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </a>
+  <!-- End Card -->
+
+   <!-- Free Service Card -->
+   <a class="group flex flex-col bg-white/[0.03] border border-white/[0.2] shadow-sm rounded-xl hover:shadow-md hover:bg-emerald-600/[0.2] hover:border-emerald-300/[0.4] transition dark:bg-white/[0.03] dark:border-white/[0.1]" href="https://services.utdallas.edu/transit/dart/">
+    <div class="p-4 md:p-5">
+      <div class="flex justify-between items-center">
+        <div>
+          <h2 class="group-hover:text-gray-200 font-semibold text-gray-200 dark:group-hover:text-gray-400 dark:text-gray-200 text-xl">
+          DART® Pass
+          </h2>
+          <p class="text-sm  text-gray-500">
+            UTD Provides student with a free one year DART® Transit Pass.
+          </p>
+        </div>
+        <div class="pl-3">
+          <button type="button" class="py-3 px-6 inline-flex sm:p-3 justify-center items-center gap-2 rounded-full border font-medium text-gray-700 shadow-sm align-middle hover:bg-emerald-600/[0.2] focus:outline-none focus:ring-2 focus:ring-offset-2  bg-emerald-600/[0.2] border-emerald-300 transition-all text-sm dark:bg-emerald-600/[0.2] dark:border-emerald-300">
+            
+          </button>
+          
+        </div>
+      </div>
+    </div>
+  </a>
+<!-- End Card -->
+
+<!-- Free Service Card -->
+<a class="group flex flex-col bg-white/[0.03] border border-white/[0.2] shadow-sm rounded-xl hover:shadow-md hover:bg-emerald-600/[0.2] hover:border-emerald-300/[0.4] transition dark:bg-white/[0.03] dark:border-white/[0.1]" href="https://studentwellness.utdallas.edu/nutrition/index.html">
+  <div class="p-4 md:p-5">
+    <div class="flex justify-between items-center">
+      <div>
+        <h2 class="group-hover:text-gray-200 font-semibold text-gray-200 dark:group-hover:text-gray-400 dark:text-gray-200 text-xl">
+        Registered Dietician
+        </h2>
+        <p class="text-sm  text-gray-500">
+          Meets with students for free regarding a number of issues related to nutrition.
+        </p>
+      </div>
+      <div class="pl-3">
+        <button type="button" class="py-3 px-6 inline-flex sm:p-3 justify-center items-center gap-2 rounded-full border font-medium text-gray-700 shadow-sm align-middle hover:bg-emerald-600/[0.2] focus:outline-none focus:ring-2 focus:ring-offset-2  bg-emerald-600/[0.2] border-emerald-300 transition-all text-sm dark:bg-emerald-600/[0.2] dark:border-emerald-300">
+          
+        </button>
+        
+      </div>
+    </div>
+  </div>
+</a>
+<!-- End Card -->
+
+<!-- Free Service Card -->
+<a class="group flex flex-col bg-white/[0.03] border border-white/[0.2] shadow-sm rounded-xl hover:shadow-md hover:bg-emerald-600/[0.2] hover:border-emerald-300/[0.4] transition dark:bg-white/[0.03] dark:border-white/[0.1]" href="https://utdesign.utdallas.edu/resources/fabrication-shop/">
+  <div class="p-4 md:p-5">
+    <div class="flex justify-between items-center">
+      <div>
+        <h2 class="group-hover:text-gray-200 font-semibold text-gray-200 dark:group-hover:text-gray-400 dark:text-gray-200 text-xl">
+          Fabrication Shop
+        </h2>
+        <p class="text-sm  text-gray-500">
+          Free space for the modification or fabrication of parts and items.
+        </p>
+      </div>
+      <div class="pl-3">
+        <button type="button" class="py-3 px-6 inline-flex sm:p-3 justify-center items-center gap-2 rounded-full border font-medium text-gray-700 shadow-sm align-middle hover:bg-emerald-600/[0.2] focus:outline-none focus:ring-2 focus:ring-offset-2  bg-emerald-600/[0.2] border-emerald-300 transition-all text-sm dark:bg-emerald-600/[0.2] dark:border-emerald-300">
+          
+        </button>
+        
+      </div>
+    </div>
+  </div>
+</a>
+<!-- End Card --> 
+
+<!-- Yellow Card -->
+<a class="group flex flex-col bg-white/[0.03] border border-white/[0.2] shadow-sm rounded-xl hover:shadow-md hover:bg-amber-400/[0.2] hover:border-amber-200/[0.4] transition dark:bg-white/[0.03] dark:border-white/[0.1]" href="https://services.utdallas.edu/print/">
+  <div class="p-4 md:p-5">
+    <div class="flex justify-between items-center">
+      <div>
+        <h2 class="group-hover:text-gray-200 font-semibold text-gray-200 dark:group-hover:text-gray-400 dark:text-gray-200 text-xl">
+          Print & Copy Services
+        </h2>
+        <p class="text-sm  text-gray-500">
+          Free and Discounted Print/Copy services.(Also Does large scale print)
+        </p>
+      </div>
+      <div class="pl-3">
+        <button type="button" class="py-3 px-6 inline-flex sm:p-3 justify-center items-center gap-2 rounded-full border font-medium text-gray-700 shadow-sm align-middle hover:bg-amber-400/[0.2] focus:outline-none focus:ring-2 focus:ring-offset-2  bg-amber-400/[0.2] border-amber-300 transition-all text-sm dark:bg-amber-400/[0.2] dark:border-amber-300">
+          
+        </button>
+        
+      </div>
+    </div>
+  </div>
+</a>
+<!-- End Card -->
+  </div>
+  <!-- End Grid -->
+</div>
+<!-- End Card Section -->
+
+
+</body>
+</html>
